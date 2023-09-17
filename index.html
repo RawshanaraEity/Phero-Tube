@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHero Tube</title>
+    <!-- tailwind and daisyui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container mx-auto mb-8">
+    <nav>
+        <div class="navbar bg-base-100 py-8">
+            <div class="navbar-start">
+              <img src="image/Logo.png" alt="logo">
+            </div>
+            <div class="navbar-center lg:flex">
+                <button onclick="handleShort(globData)" id="sort-item" class="btn btn-active btn-ghost">Short by view</button>
+            </div>
+            <div class="navbar-end">
+              <a href="blog.html" target="_blank" class="btn bg-red-600 text-white">Blog</a>
+            </div>
+          </div>
+          <hr>
+    </nav>
+    <main>
+
+       <div id="category-container" class="flex gap-5 justify-center text-center my-8">
+       
+       </div>
+
+       <div id="card-container" class="card-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-6 lg:px-0">
+
+
+    </div>
+
+    <div id="missing-data" class=" my-10 text-center text-3xl font-bold hidden">
+      <img src="image/Icon.png" alt="" class="mx-auto mb-8">
+      <p>Oops!! Sorry, There is no <br> content here</p>
+    </div>
+    </main>
+
+
+
+<!-- script file here -->
+    <script src="index.js"></script>
+  </body>
+</html>
